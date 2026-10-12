@@ -1,0 +1,19 @@
+pipeline:
+  name: "Customer Data Processing Pipeline"
+  environment: "development"
+
+sources:
+  csv_path: "data/input/sample_input.csv"
+  json_path: "data/input/sample_input.json"
+  api_url: "https://api.example.com/v1/records"
+
+destinations:
+  output_csv: "data/output/processed_output.csv"
+
+transformations:
+  drop_duplicates: true
+  numeric_imputation: "median"
+  categorical_imputation: "Unknown"
+  date_columns:
+    - "signup_date"
+  target_timezone: "UTC"

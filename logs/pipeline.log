@@ -1,0 +1,14 @@
+2026-10-12 15:39:41,913 - PipelineLogger - INFO - [pipeline.py:14] - === Pipeline Execution Started ===
+2026-10-12 15:39:41,914 - PipelineLogger - CRITICAL - [pipeline.py:22] - Pipeline failed during extraction stage: 'NoneType' object is not subscriptable
+2026-10-12 15:41:00,462 - PipelineLogger - INFO - [pipeline.py:14] - === Pipeline Execution Started ===
+2026-10-12 15:41:00,465 - PipelineLogger - INFO - [extract.py:13] - Extracting data from CSV: data/input/sample_input.csv
+2026-10-12 15:41:00,467 - PipelineLogger - CRITICAL - [pipeline.py:22] - Pipeline failed during extraction stage: No columns to parse from file
+2026-10-12 15:42:00,881 - PipelineLogger - INFO - [pipeline.py:14] - === Pipeline Execution Started ===
+2026-10-12 15:42:00,884 - PipelineLogger - INFO - [extract.py:13] - Extracting data from CSV: data/input/sample_input.csv
+2026-10-12 15:42:00,891 - PipelineLogger - INFO - [transform.py:11] - Starting data cleaning and transformation process...
+2026-10-12 15:42:00,894 - PipelineLogger - INFO - [transform.py:17] - Dropped 1 duplicate rows.
+2026-10-12 15:42:00,898 - PipelineLogger - INFO - [transform.py:32] - Imputed 1 missing values in numeric column 'age' with median (27.5).
+2026-10-12 15:42:00,904 - PipelineLogger - WARNING - [transform.py:50] - Found 1 unparseable date values in column 'signup_date', converted to NaT.
+2026-10-12 15:42:00,904 - PipelineLogger - INFO - [transform.py:52] - Data transformation completed successfully.
+2026-10-12 15:42:00,911 - PipelineLogger - INFO - [pipeline.py:38] - Successfully wrote output to data\output\processed_output.csv
+2026-10-12 15:42:00,912 - PipelineLogger - INFO - [pipeline.py:43] - === Pipeline Execution Completed Successfully ===
